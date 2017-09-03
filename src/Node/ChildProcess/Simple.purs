@@ -75,7 +75,7 @@ execFileAff
 execFileAff cmd args opts = makeAff $ \reject accept ->
   CP.execFile cmd args opts (_affCallback reject accept)
 
--- | Run a command directly from a file using defaultExecOptionos and return its
+-- | Run a command directly from a file using defaultExecOptions and return its
 -- | stdout as a String.
 execFileAff'
   :: forall e
